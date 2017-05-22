@@ -9,8 +9,8 @@ This study is an effort aimed at reproducing the result presented in the Smart t
 This repository is structured as follows:
 
 - Data
-- First step
-- Second step
+- Row population
+- Column population
 - Output
 
 ## Data
