@@ -16,7 +16,7 @@ This repository is structured as follows:
 ## Data
 The data we used are public data sets:
 - DBpedia 2015-10
-- WikiTable [Download] http://websail-fe.cs.northwestern.edu/TabEL/
+- WikiTable from http://websail-fe.cs.northwestern.edu/TabEL/
 
 ## Runs
 All the run files can be found in /output.
