@@ -8,9 +8,9 @@ This study is an effort aimed at reproducing the result presented in the Smart t
 
 This repository is structured as follows:
 
-- Data
-- Population
-- Output
+- Data: This folder has the table id files, and will be updated late on!
+- Population: All the core implementation of population tasks are provided here.
+- Output: The output file is only requested by email.
 
 ## Data
 The data we used are public data sets:
