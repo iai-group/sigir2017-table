@@ -10,7 +10,7 @@ This repository is structured as follows:
 
 - Data: This folder has the table id files, and will be updated late on!
 - Population: All the core implementation of population tasks are provided here.
-- Output: The output file is only requested by email.
+- Output: The output files can only be requested by email now.
 
 ## Data
 The data we used are public data sets:
