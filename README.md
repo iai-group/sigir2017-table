@@ -1,7 +1,7 @@
 # sigir2017-table
 
 This repository provides reources developed within the following paper:
-> S. Zhang and K. Balog. EntiTables: Smart Assistance for Entity-Focused Tables. - SIGIR'17 [BIB](http://krisztianbalog.com/showpub.php?id=Zhang:2017:ESA)
+> S. Zhang and K. Balog. EntiTables: Smart Assistance for Entity-Focused Tables. - SIGIR'17 [[BIB]](http://krisztianbalog.com/showpub.php?id=Zhang:2017:ESA)
 
 This study is an effort aimed at reproducing the result presented in the Smart table paper.
 
@@ -18,7 +18,7 @@ The data we used are public data sets:
 - WikiTable from http://websail-fe.cs.northwestern.edu/TabEL/
 
 ## Implementations
-All the row and column population implementation can be found in /Population.
+All the row and column population implementation can be found [here](/Population).
 
 ## Contact
 If you have any question, please contact Shuo Zhang at shuo.zhang@uis.no
