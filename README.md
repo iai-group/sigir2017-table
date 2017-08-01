@@ -40,4 +40,4 @@ The data we used are public data sets:
 
 
 ## Contact
-If you have any question, please contact Shuo Zhang at shuo.zhang@uis.no
+If you have any question, please contact Shuo Zhang at shuo.zhang@uis.no or Krisztian Balog at krisztian.balog@uis.no
