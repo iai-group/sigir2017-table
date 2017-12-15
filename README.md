@@ -18,8 +18,8 @@ The data we used are public data sets:
 - WikiTable from http://websail-fe.cs.northwestern.edu/TabEL/
 
 ## Population
-[NOTE] We are using elstic 2 ( > 2.3), elasticsearch 5 will encounter some minor problems with elastic.py wrapper.
-To score the column labels, we need to build an table index with multiple fields using elasticsearch.
+[NOTE] We are using elastic 2 ( > 2.3), elasticsearch 5 will encounter some minor problems with elastic.py wrapper.
+To score the column labels, we need to build a table index with multiple fields using elasticsearch.
 An exmaple indexer is provided for indexing. Index your table corpus data following this example and start your population:)
 
 ## Citation
