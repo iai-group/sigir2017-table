@@ -10,6 +10,7 @@ Column population pipeline.
 from elastic import Elastic
 
 
+
 class Column_evaluation(object):
     def __init__(self, test_tables=None):
         """
@@ -64,7 +65,7 @@ class Column_evaluation(object):
             tables += list(res.keys())
             for table_id in res.keys():
                 doc = self.__tes.get_doc(table_id)
-                labels = doc["_source"]["headings_a"]
+                labels = doc["_source"]["headings"]
                 cand += labels
         return set([i for i in cand if i not in seed]), tables
 

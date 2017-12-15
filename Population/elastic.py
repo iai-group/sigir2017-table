@@ -216,6 +216,14 @@ class Elastic(object):
             results[hit["_id"]] = hit["_score"]
         return results
 
+    def estimate_number(self, query):
+        """Search body, return the number of hits containg body"""
+        try:
+            return self.__es.search(index=self.__index_name, q = query, _source=False, size=1,
+                                from_=0)["hits"]["total"]
+        except:
+            return 0
+
     def search_complex(self, body, num=100, fields_return="", start=0):
         """Searches in a given field using the similarity method configured in the index for that field.
 
@@ -232,6 +240,14 @@ class Elastic(object):
         for hit in hits:
             results[hit["_id"]] = hit["_score"]
         return results
+
+    def estimate_number_complex(self, body):
+        """Search body, return the number of hits containg body"""
+        try:
+            return self.__es.search(index=self.__index_name, body=body, _source=False, size=1,
+                                from_=0)["hits"]["total"]
+        except:
+            return 0
 
     def get_field_stats(self, field):
         """Returns stats of the given field."""
