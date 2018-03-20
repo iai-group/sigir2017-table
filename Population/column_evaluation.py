@@ -32,7 +32,7 @@ class Column_evaluation(object):
 
     def find_candidates_c(self, c, seed, num=100):
         """find candidate tables complement with table caption"""
-        res = self.__tes.search(query=c, field="catchall", num=num)
+        res = self.__tes.search(query=c, field="caption", num=num)
         cand = []
         for table_id in res.keys():
             doc = self.__tes.get_doc(table_id)
