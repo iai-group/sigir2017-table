@@ -148,7 +148,7 @@ class P_e_e(Row_evaluation):
                 "query": {
                     "bool": {
                         "must": {
-                            "term": {"entities_1st_col": query[0]}
+                            "term": {"entity": query[0]}
                         }
                     }
                 }
