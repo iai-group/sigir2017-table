@@ -8,7 +8,7 @@ This study is an effort aimed at reproducing the result presented in the Smart t
 
 This repository is structured as follows:
 
-- Data: This folder has the table id files, and will be updated late on!
+- Data: The table corpus is [WikiTables](http://websail-fe.cs.northwestern.edu/TabEL/), which comprises 1.6M tables extracted from Wikipedia. We proproceeed it and make it public downloadable [here](http://iai.group/downloads/smart_table/WP_tables.zip).
 - Population: All the core evaluation of population tasks are provided here.
 - Output: The output files can only be requested by email now.
 
