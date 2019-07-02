@@ -248,6 +248,13 @@ class Elastic(object):
                                 from_=0)["hits"]["total"]
         except:
             return 0
+          
+    def get_ids(self, body):
+        """Search body, return the number of hits containg body"""
+        try:
+            return search_complex(body).keys()
+        except:
+            return 0
 
     def get_field_stats(self, field):
         """Returns stats of the given field."""
