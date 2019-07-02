@@ -119,6 +119,29 @@ class P_e_e(Row_evaluation):
         if p_kb != 0:
             p_kb = math.log(p_kb)
         return p_kb
+    
+    def p_l_theta_lm(self, label, table_ids):
+        """Using language modeling estimate P(l|theta)"""
+        p_label = self.parse(label)
+        p_l_theta = 0
+        c_l = self.__tes.coll_length("headings")  # collection length
+        for t in p_label:
+            a_t = self.__tes.analyze_query(t)
+            l_l = 0  # table label length(table containing t)
+            t_f = 0  # tf of label
+            c_tf = self.__tes.coll_term_freq(a_t, "headings")  # tf in collection
+            for table_id in table_ids2:
+                l_l += self.__tes.doc_length(table_id, "headings")
+                t_f += self.__tes.term_freq(table_id, "headings", a_t)
+            if l_l + self.__mu != 0:
+                p = (t_f + self.__mu * c_tf / c_l) / (l_l + self.__mu)
+                p_l_theta += math.log(p)
+            else:
+                p_l_theta += 0
+
+        if p_l_theta != 0:
+            p_l_theta = math.exp(p_l_theta)
+        return p_l_theta
 
     def estimate_ple(self, cand, l):
         """Estimate P(l|e_i+1) for candidates"""
