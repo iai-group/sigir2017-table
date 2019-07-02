@@ -132,7 +132,7 @@ class P_e_e(Row_evaluation):
                 n_l_e = self.__tes.estimate_number_complex(body2)  # number of tables containing e_i+1&label
 
                 p_l_theta = ScorerLM(self.__tes, l, {}).score_doc(table)
-                    self.p_l_theta_lm(label, table_ids)
+#                     self.p_l_theta_lm(label, table_ids)
                 if n_e == 0:
                     p_all[entity] += self.__lambda * p_l_theta
                 else:
