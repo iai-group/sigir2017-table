@@ -153,8 +153,10 @@ class P_e_e(Row_evaluation):
                 n_e = self.__tes.estimate_number_complex(body)  # number of tables containing e_i+1
                 body2 = self.generate_search_body_l([entity, label])
                 n_l_e = self.__tes.estimate_number_complex(body2)  # number of tables containing e_i+1&label
+                table_ids = self.__tes.get_ids(body2)
 
-                p_l_theta = ScorerLM(self.__tes, l, {}).score_doc(table)
+                p_l_theta = self.p_l_theta_lm(label, table_ids)
+#                 ScorerLM(self.__tes, l, {}).score_doc(table)
 #                     self.p_l_theta_lm(label, table_ids)
                 if n_e == 0:
                     p_all[entity] += self.__lambda * p_l_theta
