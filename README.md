@@ -45,4 +45,4 @@ An exmaple indexer is provided for indexing. Index your table corpus data follow
 
 
 ## Contact
-If you have any question, please contact Shuo Zhang at shuo.zhang@uis.no or Krisztian Balog at krisztian.balog@uis.no
+If you have any question, please contact Shuo Zhang at imsure318@gmail.com or Krisztian Balog at krisztian.balog@uis.no
