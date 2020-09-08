@@ -22,6 +22,9 @@ The data we used are public data sets:
 To score the column labels, we need to build a table index with multiple fields using elasticsearch.
 An exmaple indexer is provided for indexing. Index your table corpus data following this example and start your population:)
 
+## Note
+The run files are accessiable per request.
+
 ## Citation
 ```
 @inproceedings{Zhang:2017:ESA,
