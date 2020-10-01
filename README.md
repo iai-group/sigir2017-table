@@ -12,6 +12,10 @@ This repository is structured as follows:
 - Population: All the core evaluation of population tasks are provided here.
 - Output: The output files can only be requested by email now.
 
+## Run files
+You can download all the runfiles [here](https://gustav1.ux.uis.no/downloads/sigir2019-table2vec/runfiles.zip).
+
+
 ## Data
 The data we used are public data sets:
 - DBpedia 2015-10
